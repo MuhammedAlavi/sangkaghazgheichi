@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>سنگ کاغذ قیچی</title>
+  </head>
+  <body onload="loadGame()">
+    <!-- انتخاب کامپیوتر -->
+    <div class="board">
+      <div id="computer" class="computer-image"></div>
+      <!-- بخش نتایج -->
+      <div class="result">
+        <h1 id="message" class="message"></h1>
+        <div class="reset-button" onclick="loadGame()">شروع مجدد</div>
+      </div>
+
+      <!-- انتخاب کاربر -->
+      <div class="user">
+        <button onclick="game(1)" title="سنگ">
+          <img src="stone.svg" alt="سنگ" />
+        </button>
+        <button onclick="game(2)">
+          <img src="paper.svg" alt="کاغذ" title="کاغذ" />
+        </button>
+        <button onclick="game(3)">
+          <img src="scissors.svg" alt="قیچی" title="قیچی" />
+        </button>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
