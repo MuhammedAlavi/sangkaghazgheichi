@@ -14,15 +14,15 @@ function loadQuestionImage() {
   var r = window.localStorage["shei"];
   if (r == 1) {
     document.getElementById("computer").innerHTML =
-      "<img src='stone.svg' alt='سنگ' />";
+      "<img src='images/stone.svg' alt='سنگ' />";
   }
   if (r == 2) {
     document.getElementById("computer").innerHTML =
-      "<img src='paper.svg' alt='کاغذ' />";
+      "<img src='images/paper.svg' alt='کاغذ' />";
   }
   if (r == 3) {
     document.getElementById("computer").innerHTML =
-      "<img src='scissors.svg' alt='قیچی' />";
+      "<img src='images/scissors.svg' alt='قیچی' />";
   }
 }
 
